@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34902.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevHabit.API", "DevHabit.API.csproj", "{606787C1-C401-461D-A206-3ECE8BBF1AC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{57F7AC58-DFA6-4E36-90B7-8305B8855148}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{606787C1-C401-461D-A206-3ECE8BBF1AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606787C1-C401-461D-A206-3ECE8BBF1AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606787C1-C401-461D-A206-3ECE8BBF1AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606787C1-C401-461D-A206-3ECE8BBF1AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99FAF452-743D-4E02-A55E-E00F44DC27E7}
+	EndGlobalSection
+EndGlobal
