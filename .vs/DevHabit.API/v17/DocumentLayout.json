@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\controllers\\habitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:controllers\\habitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:database\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\dtos\\habitmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:dtos\\habitmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\devhabit.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:devhabit.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\dtos\\createhabitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:dtos\\createhabitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\dtos\\habitqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:dtos\\habitqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\dtos\\habitsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:dtos\\habitsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\entities\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:entities\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|c:\\users\\raj.kumar\\documents\\devhabit.api\\database\\extensions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{606787C1-C401-461D-A206-3ECE8BBF1AC5}|DevHabit.API.csproj|solutionrelative:database\\extensions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +54,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "HabitQueries.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\HabitQueries.cs",
+              "RelativeDocumentMoniker": "DTOs\\HabitQueries.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\HabitQueries.cs",
+              "RelativeToolTip": "DTOs\\HabitQueries.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T19:02:06.21Z",
+              "WhenOpened": "2026-09-30T10:43:22.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DevHabit.API.csproj",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj",
-              "RelativeDocumentMoniker": "DevHabit.API.csproj",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj",
-              "RelativeToolTip": "DevHabit.API.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-29T18:59:31.739Z",
+              "Title": "HabitMappings.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\HabitMappings.cs",
+              "RelativeDocumentMoniker": "DTOs\\HabitMappings.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\HabitMappings.cs",
+              "RelativeToolTip": "DTOs\\HabitMappings.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAQwCsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T09:58:21.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateHabitDto.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\CreateHabitDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateHabitDto.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\CreateHabitDto.cs",
+              "RelativeToolTip": "DTOs\\CreateHabitDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T09:53:01.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Habit.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Entities\\Habit.cs",
+              "RelativeDocumentMoniker": "Entities\\Habit.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Entities\\Habit.cs",
+              "RelativeToolTip": "Entities\\Habit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T07:53:03.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HabitsDto.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\HabitsDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\HabitsDto.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DTOs\\HabitsDto.cs",
+              "RelativeToolTip": "DTOs\\HabitsDto.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAcwAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T07:47:28.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Database\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Database\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Database\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Database\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T18:58:45.095Z",
+              "WhenOpened": "2026-09-30T07:44:40.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HabitsController.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Controllers\\HabitsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HabitsController.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Controllers\\HabitsController.cs",
+              "RelativeToolTip": "Controllers\\HabitsController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAswGYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T07:34:57.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatabaseExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Database\\Extensions\\DatabaseExtensions.cs",
+              "RelativeDocumentMoniker": "Database\\Extensions\\DatabaseExtensions.cs",
+              "ToolTip": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\Database\\Extensions\\DatabaseExtensions.cs",
+              "RelativeToolTip": "Database\\Extensions\\DatabaseExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T09:03:04.072Z",
               "EditorCaption": ""
             }
           ]

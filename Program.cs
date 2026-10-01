@@ -1,4 +1,5 @@
 using DevHabit.API.Database;
+using DevHabit.API.Database.Extensions;
 using Microsoft.EntityFrameworkCore;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
@@ -9,7 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.ReturnHttpNotAcceptable = true;
+})
+    .AddNewtonsoftJson()
+    .AddXmlSerializerFormatters(); // enable xml type
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -39,6 +45,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    await app.ApplyMigrationsAsync();
 }
 
 app.MapControllers();
