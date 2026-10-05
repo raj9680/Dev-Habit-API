@@ -23,6 +23,11 @@ namespace DevHabit.API.Database.Configurations
             });
 
             builder.OwnsOne(h => h.Milestone);
+
+            // Skip Navigation Property
+            builder.HasMany(h => h.Tags)
+                .WithMany()
+                .UsingEntity<HabitTag>();
         }
     }
 }

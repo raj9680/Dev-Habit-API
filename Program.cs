@@ -1,5 +1,8 @@
 using DevHabit.API.Database;
 using DevHabit.API.Database.Extensions;
+using DevHabit.API.DTOs;
+using DevHabit.API.Middlewares;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using OpenTelemetry;
 using OpenTelemetry.Metrics;
@@ -16,6 +19,20 @@ builder.Services.AddControllers(options =>
 })
     .AddNewtonsoftJson()
     .AddXmlSerializerFormatters(); // enable xml type
+
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+
+builder.Services.AddProblemDetails(options =>
+{
+    options.CustomizeProblemDetails = context =>
+    {
+        context.ProblemDetails.Extensions.TryAdd("requestId", context.HttpContext.TraceIdentifier);
+    };
+});
+builder.Services.AddExceptionHandler<ValidationExceptionHandler>(); // MW 1
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();    // MW 2
+
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -48,6 +65,8 @@ if (app.Environment.IsDevelopment())
 
     await app.ApplyMigrationsAsync();
 }
+
+app.UseExceptionHandler();
 
 app.MapControllers();
 

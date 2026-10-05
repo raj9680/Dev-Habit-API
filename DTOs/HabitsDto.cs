@@ -1,12 +1,22 @@
 ﻿namespace DevHabit.API.DTOs
 {
-    
-    public sealed record HabitsCollectionDto
+
+    public interface PaginationResult<T>
     {
-        public List<HabitsDto> Data { get; init; }
+        List<T> Items { get; set; }
     }
 
-    public sealed class HabitsDto
+    public sealed record HabitsCollectionDto : PaginationResult<HabitsDto>
+    {
+        public List<HabitsDto> Items { get; set; }
+    }
+
+    public class HabitWithTagsDto: HabitsDto
+    {
+        public required string[] Tags { get; set; }
+    }
+
+    public class HabitsDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;

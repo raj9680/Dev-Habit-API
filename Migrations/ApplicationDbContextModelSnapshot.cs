@@ -4,19 +4,16 @@ using DevHabit.API.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace DevHabit.API.Migrations.Application
+namespace DevHabit.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260930072256_Add_Habits")]
-    partial class Add_Habits
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,6 +76,64 @@ namespace DevHabit.API.Migrations.Application
                         .HasName("pk_habit");
 
                     b.ToTable("habit", "dev_habit");
+                });
+
+            modelBuilder.Entity("DevHabit.API.Entities.HabitTag", b =>
+                {
+                    b.Property<int>("HabitId")
+                        .HasColumnType("int")
+                        .HasColumnName("habit_id");
+
+                    b.Property<int>("TagId")
+                        .HasColumnType("int")
+                        .HasColumnName("tag_id");
+
+                    b.Property<DateTime>("CreatedAtUtc")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_at_utc");
+
+                    b.HasKey("HabitId", "TagId")
+                        .HasName("pk_habit_tag");
+
+                    b.HasIndex("TagId")
+                        .HasDatabaseName("ix_habit_tag_tag_id");
+
+                    b.ToTable("habit_tag", "dev_habit");
+                });
+
+            modelBuilder.Entity("DevHabit.API.Entities.Tag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAtUtc")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_at_utc");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)")
+                        .HasColumnName("description");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .IsUnicode(true)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("name");
+
+                    b.Property<DateTime>("UpdatedAtUtc")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_at_utc");
+
+                    b.HasKey("Id")
+                        .HasName("pk_tag");
+
+                    b.ToTable("tag", "dev_habit");
                 });
 
             modelBuilder.Entity("DevHabit.API.Entities.Habit", b =>
@@ -161,6 +216,28 @@ namespace DevHabit.API.Migrations.Application
 
                     b.Navigation("Target")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("DevHabit.API.Entities.HabitTag", b =>
+                {
+                    b.HasOne("DevHabit.API.Entities.Habit", null)
+                        .WithMany("HabitTags")
+                        .HasForeignKey("HabitId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("fk_habit_tag_habit_habit_id");
+
+                    b.HasOne("DevHabit.API.Entities.Tag", null)
+                        .WithMany()
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("fk_habit_tag_tag_tag_id");
+                });
+
+            modelBuilder.Entity("DevHabit.API.Entities.Habit", b =>
+                {
+                    b.Navigation("HabitTags");
                 });
 #pragma warning restore 612, 618
         }

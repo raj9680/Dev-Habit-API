@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj": {}
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\DevHabit.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj": {
+    "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\DevHabit.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj",
+        "projectUniqueName": "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\DevHabit.API.csproj",
         "projectName": "DevHabit.API",
-        "projectPath": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj",
-        "packagesPath": "C:\\Users\\raj.kumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\obj\\",
+        "projectPath": "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\DevHabit.API.csproj",
+        "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\raj.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,6 +31,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -40,15 +45,21 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "EFCore.NamingConventions": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[9.1.2, )"
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
@@ -124,7 +135,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,6 +12,8 @@
 	  
     <PackageReference Include="EFCore.NamingConventions" Version="8.0.0" />
 	  
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.1.2" />
+	  
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="10.0.12" />
 	  
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.14" />
@@ -39,6 +41,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\Application\" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {
       "Azure.Core/1.38.0": {
@@ -59,6 +59,36 @@
         },
         "runtime": {
           "lib/net8.0/EFCore.NamingConventions.dll": {}
+        }
+      },
+      "FluentValidation/9.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/9.1.2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.1.2",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -2027,6 +2057,34 @@
         "efcore.namingconventions.8.0.0.nupkg.sha512",
         "efcore.namingconventions.nuspec",
         "lib/net8.0/EFCore.NamingConventions.dll"
+      ]
+    },
+    "FluentValidation/9.1.2": {
+      "sha512": "+l80lxon18PPJhLEGQGiono5vYhJHuIZUCfGPzO01EFFHOy5ZudF4WmWk+3JNCtKOMnyCwKits/BLhUlTiFsyw==",
+      "type": "package",
+      "path": "fluentvalidation/9.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.9.1.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/9.1.2": {
+      "sha512": "Z25RmO0NnSrIos/136TJ4nZ+alBg1CG8kyaIGimrUToJZ5G61yiVht79OrodZz7EGV7RDg0fggJAsV13kOvfaQ==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/9.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.dependencyinjectionextensions.9.1.2.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -5407,6 +5465,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "EFCore.NamingConventions >= 8.0.0",
+      "FluentValidation.DependencyInjectionExtensions >= 9.1.2",
       "Microsoft.AspNetCore.JsonPatch >= 10.0.12",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.20",
@@ -5422,19 +5481,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raj.kumar\\.nuget\\packages\\": {}
+    "C:\\Users\\aryan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj",
+      "projectUniqueName": "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\DevHabit.API.csproj",
       "projectName": "DevHabit.API",
-      "projectPath": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\DevHabit.API.csproj",
-      "packagesPath": "C:\\Users\\raj.kumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raj.kumar\\Documents\\DevHabit.API\\obj\\",
+      "projectPath": "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\DevHabit.API.csproj",
+      "packagesPath": "C:\\Users\\aryan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aryan\\OneDrive\\Desktop\\Dev-Habit-API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\raj.kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5447,6 +5511,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -5460,15 +5525,21 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "dependencies": {
           "EFCore.NamingConventions": {
             "target": "Package",
             "version": "[8.0.0, )"
+          },
+          "FluentValidation.DependencyInjectionExtensions": {
+            "target": "Package",
+            "version": "[9.1.2, )"
           },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
@@ -5544,7 +5615,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

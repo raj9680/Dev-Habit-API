@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "/0hQwxrJhCjuzQ7ADNxyFQahJS+E3ShHhJtm7VaQcy0=",
-  "Source": "DevHabit.API",
-  "BasePath": "_content/DevHabit.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"98xJXAb1+PBsLL5FFNY2nxq5eAPfZEgmWEV0hNY1SF0=","Source":"DevHabit.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
